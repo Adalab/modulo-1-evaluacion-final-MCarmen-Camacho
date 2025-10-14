@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Evaluación Final</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,22 +21,23 @@
           <img src="./images/ico-menu.svg" alt="Menu" />
         </a>
       </nav>
-      <section class="hero">
+      <section id="hero" class="hero">
         <h1 class="hero__title">Comienzos compartidos</h1>
         <p class="hero__paragraph">
           Todo lo que necesitan para volver al cole con ilusión.
         </p>
-        <a href="#main__scroll" class="main__scroll">
+        <a href="#hero__scroll" class="hero__scroll">
           <img
             src="./images/ico-scroll-down.svg"
             alt="Scroll a seccion Vuelta al cole"
+            class="scroll_img"
           />
         </a>
       </section>
     </header>
     <main>
       <section class="main__aboutstore">
-        <h2 class="main__title">Historias, moda y ropa deportiva.</h2>
+        <h2 class="main__title">Historias, moda y ropa deportiva</h2>
         <article class="main__article">
           <h3 class="article__title">Tu tienda de deporte</h3>
           <p class="article__paragraph">
@@ -46,26 +47,72 @@
             personal.
           </p>
         </article>
-        <a href="https://adalab.es/" class="purchase__button">
-          <button>Comprar</button>
-        </a>
+        <a href="https://adalab.es/" class="purchase__button">Comprar</a>
       </section>
-      <section id="main__scroll" class="main__productlinks"></section>
+      <section id="hero__scroll" class="main__productlinks">
+        <div>
+          <h2 class="products__title1">
+            ¡Prepáralos con tus marcas favoritas!
+          </h2>
+          <h3 class="products__title2">Vuelta al cole</h3>
+        </div>
+        <div>
+          <article>
+            <img
+              src="./images/lpbts-mod05-img01-desk.png"
+              alt="Niña sonriendo con mochila escolar"
+              class="product__img"
+            />
+            <h4 class="img__title">Mochilas escolares</h4>
+          </article>
+          <article>
+            <img
+              src="./images/lpbts-mod05-img04-mob.png"
+              alt="Niño sonriendo entre lápices de colores"
+              class="product__img"
+            />
+            <h4 class="img__title">Estuches</h4>
+          </article>
+          <article>
+            <img
+              src="./images/lpbts-mod05-img03-mob.png"
+              alt="Niña sonriendo con mochila escolar 2"
+              class="product__img"
+            />
+            <h4 class="img__title">Bolsas de deporte</h4>
+          </article>
+        </div>
+        <div>
+          <a href="https://adalab.es/" class="startnow__button"
+            >Empezar ahora</a
+          >
+        </div>
+      </section>
     </main>
-    <footer>
+    <footer class="footer">
+      <div class="footer__arrow">
+        <a href="#hero" class="backtohero__arrow">
+          <img src="./images/ico-arrow.svg" alt="Volver a Hero"
+        /></a>
+      </div>
       <ul class="footer__links">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li><a href="https://adalab.es/" class="link__item">Zapatillas</a></li>
+        <li><a href="https://adalab.es/" class="link__item">Ropa</a></li>
+        <li><a href="https://adalab.es/" class="link__item">Niño/a</a></li>
+        <li><a href="https://adalab.es/" class="link__item">Destacados</a></li>
+        <li><a href="https://adalab.es/" class="link__item">Tips</a></li>
       </ul>
       <ul class="footer__social">
-        <li></li>
-        <li></li>
-        <li></li>
+        <li><a href="https://adalab.es/" class="link__item">Twitter</a></li>
+        <li><a href="https://adalab.es/" class="link__item">Instagram</a></li>
+        <li><a href="https://adalab.es/" class="link__item">Youtube</a></li>
       </ul>
-      <section class="footer__copy"></section>
+      <section class="footer__copy">
+        &copy;2025
+        <div class="footer__tranform">
+          we<i class="fa-solid fa-heart fa-beat" style="color: #065d03"></i>run
+        </div>
+      </section>
     </footer>
   </body>
 </html>
