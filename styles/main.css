@@ -20,6 +20,7 @@
   background-position: 85% center;
   background-repeat: no-repeat;
   min-height: 100dvh;
+  padding-bottom: 3rem;
 }
 
 .menu {
@@ -33,7 +34,7 @@
 
 .hero {
   padding-top: 50rem;
-  padding-inline: 10rem;
+  padding-inline: 13rem;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -59,6 +60,8 @@
   line-height: 1.9rem;
   color: #ffffff;
   padding-bottom: 3rem;
+  text-indent: -1rem;
+  text-wrap: balance;
 }
 
 .hero__scroll {
@@ -128,10 +131,10 @@
   background-color: var(--color-secondary);
   min-height: 100dvh;
   display: grid;
-  grid-template-rows: 15% 65% 20%;
+  grid-template-rows: 10% 70% 5%;
   gap: 2rem;
-  justify-items: center;
   align-items: center;
+  text-align: center;
 }
 
 .products__title1 {
@@ -195,7 +198,7 @@
   position: absolute;
   top: -3rem;
   left: 50%;
-  transform:  translateX(-50%);
+  transform: translateX(-50%);
 }
 
 .footer__links {
@@ -232,4 +235,109 @@
   line-height: 3rem;
 }
 
+@media (width>768px) {
+  .header {
+    background-position: 75% center;
+    background-size: 120%;
+  }
+
+  .hero {
+    padding-top: 50rem;
+    padding-inline: 50rem;
+  }
+
+  .hero__title {
+    font-size: 7.5rem;
+    line-height: 10rem;
+    text-indent: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .hero__paragraph {
+    line-height: 2.8rem;
+    font-size: 2.4rem;
+    padding-bottom: 4rem;
+    width: 70%;
+  }
+
+  .main__aboutstore {
+    margin-inline: 5rem;
+    margin-block: 4rem;
+  }
+
+  .main__title {
+    font-size: 1.6rem;
+  }
+
+  .article__title {
+    font-size: 3.2rem;
+    line-height: 4.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .article__paragraph {
+    font-size: 2rem;
+  }
+
+  .purchase__button {
+    border: 0.4rem solid var(--color-primary);
+    font-weight: 500;
+  }
+
+  .main__productlinks {
+    padding-top: 3rem;
+    min-height: 50dvh;
+    gap: 0.5rem;
+  }
+
+  .products__title2 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    line-height: 4.5rem;
+  }
+
+  .img__title {
+    font-size: 1.8rem;
+  }
+
+  .product__container2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    justify-items: center;
+    align-items: start;
+    width: 100%;
+  }
+
+  .product__container3 {
+padding-bottom: 2rem;
+  }
+
+  .footer__containers {
+    padding top: 3rem;
+    padding-inline: 4rem;
+    display: flex;
+    justify-content: center;
+  }
+
+    .footer__links {
+    width: 30%;
+    list-style: none;
+    order: 2;
+  }
+
+  .footer__social {
+    width: 30%;
+    list-style: none;
+    order: 3;
+  }
+
+  .footer__copy {
+    width: 30%;
+    order: 1;
+    
+  }
+}
+
+@media (width>1024px) {
 }
