@@ -183,6 +183,7 @@
   font-weight: 400;
   border-radius: 4rem;
   padding: 1rem 4rem;
+  display: inline-block;
 }
 
 .startnow__button:hover {
@@ -261,6 +262,10 @@
   line-height: 3rem;
 }
 
+.green__heart {
+  color: var(--color-primary);
+}
+
 @media (width>768px) {
   .header {
     background-position: 75% center;
@@ -268,7 +273,7 @@
   }
 
   .hero {
-    padding-top: 50rem;
+    padding-top: 35rem;
     padding-inline: 50rem;
   }
 
@@ -289,7 +294,7 @@
 
   .main__aboutstore {
     margin-inline: 3.8rem;
-    margin-inline: 4rem;
+    margin-inline: 2rem;
   }
 
   .main__title {
@@ -303,7 +308,9 @@
   }
 
   .article__paragraph {
+    text-align: left;
     font-size: 2rem;
+    text-wrap: wrap;
   }
 
   .purchase__button {
@@ -377,7 +384,7 @@
   }
 
   .main__aboutstore {
-    margin-inline: 17rem;
+    margin-inline: 6rem;
     margin-block: 4rem;
   }
 }
