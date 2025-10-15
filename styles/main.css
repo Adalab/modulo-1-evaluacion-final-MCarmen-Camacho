@@ -127,6 +127,11 @@
   margin-bottom: 3rem;
 }
 
+.purchase__button:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+
 .main__productlinks {
   background-color: var(--color-secondary);
   min-height: 100dvh;
@@ -180,6 +185,11 @@
   padding: 1rem 4rem;
 }
 
+.startnow__button:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+
 .footer {
   background-color: var(--color-tertiary);
   text-align: center;
@@ -199,6 +209,22 @@
   top: -3rem;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.backtohero__arrow img {
+  animation: bounce 1s ease-in-out infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .footer__links {
@@ -354,3 +380,4 @@
     margin-inline: 17rem;
     margin-block: 4rem;
   }
+}
